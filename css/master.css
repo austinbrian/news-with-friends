@@ -1,0 +1,80 @@
+body {
+    margin:10px;
+    padding:20px;
+}
+
+p {
+    font-family:"Garamond";
+}
+
+abouthed {
+    display:flex;
+    flex-wrap:wrap;
+    align-content:center;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+.foot-container {
+  height:11px;
+  width:110px;
+  margin:10px 0px;
+  align-items: center;
+}
+
+.circle {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+  background: none;
+  border: #888888 dashed;
+  transition: all 500ms ease-in-out;
+}
+
+.foot-container:hover .circle {
+  transform:
+    rotate(360deg)
+    translate(0px, -9px)
+    scale(.2);
+  color:#054568;
+/*   transform:scale(.4); */
+
+}
+
+.text-block {
+  color:rgba(0,0,0,0);
+  width:110px;
+}
+
+.foot-container:hover .text-block {
+  color: #888888;
+  background-color: none;
+  font-family:arial;
+/*   font-style:italic; */
+  font-size:8px;
+  width:110px;
+  height:10px;
+  text-align:center;
+  transform:
+    translateX(-9px)
+    translateY(-21px);
+  transition: all 600ms;
+}
+
+a.briangithub {
+  text-decoration:none;
+  font-style:
+}
