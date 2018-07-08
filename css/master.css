@@ -10,12 +10,36 @@ body {
     padding:20px;
 }
 
+.nameinputcont {
+    display:flex;
+    justify-content: space-around;
+    margin:10px;
+}
+
+.nameinputcont input {
+    height:35px;
+    padding:0 5px 5px 0;
+    font-family: "Courier New";
+    border:2px solid black;
+}
+
+.nameinputcont input:active {
+    border:none;
+}
 .btn {
   background-color:red;
   border: red;
 }
 
+.btn:hover {
+    box-shadow: 6px rgba(0,50,0,.8);
+}
+
+.btn:active {
+    border:none;
+}
 p {
+    font-size: 14pt;
     font-family:"Garamond";
 }
 
@@ -23,7 +47,8 @@ p {
     display:flex;
     flex-wrap:wrap;
     flex-direction: row;
-    align-content:center;
+    align-content: space-around;
+    justify-content:space-around;
 }
 .abouthed {
     display:flex;
@@ -55,11 +80,17 @@ h2 {
 
 }
 
+img:hover {
+    transform:scale(1.05);
+    box-shadow: 4px 4px rgba(133, 149, 159,.2);
+}
+
 
 
 footer {
     position: relative;
     bottom: 0;
+    height:20px;
 }
 
 .foot-container {
@@ -91,7 +122,8 @@ footer {
 
 .text-block {
   color:rgba(0,0,0,0);
-  width:110px;
+  width:200px;
+  height:0px;
 }
 
 .foot-container:hover .text-block {
@@ -104,8 +136,8 @@ footer {
   height:10px;
   text-align:center;
   transform:
-    translateX(-9px)
-    translateY(-21px);
+    translateX(-4px)
+    translateY(-24px);
   transition: all 600ms;
 }
 
