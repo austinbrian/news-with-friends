@@ -1,24 +1,59 @@
+h1 {
+  text-align: center;
+}
+
+h1:hover {
+  color:blue;
+}
 body {
     margin:10px;
     padding:20px;
+}
+
+.btn {
+  background-color:red;
+  border: red;
 }
 
 p {
     font-family:"Garamond";
 }
 
-abouthed {
+.aboutcontainer {
     display:flex;
     flex-wrap:wrap;
+    flex-direction: row;
     align-content:center;
+}
+.abouthed {
+    display:flex;
+
+    align-items:center;
+    align-content: space-around;
+}
+
+.abouthed {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    padding:15px;
+
+    text-align:center;
 }
 
 h2 {
     text-decoration: underline;
+    text-align:center;
 }
 
+.aboutpic {
+    display: flex;
+    flex-direction: row;
+    height:150px;
+    width:150px;
+    border-radius:50%;
 
-
+}
 
 
 
@@ -48,7 +83,7 @@ footer {
   transform:
     rotate(360deg)
     translate(0px, -9px)
-    scale(.2);
+    scale(.02);
   color:#054568;
 /*   transform:scale(.4); */
 
