@@ -4,12 +4,37 @@ nav {
     justify-content: space-between;
 }
 
+.greencolor {
+    color:rgba(140,206,135);
+}
+
+.graycolor {
+    color:rgba(240,240,240);
+}
+
+.yellowcolor {
+    color:rgba(235,228,70);
+}
+
 .navlink {
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
+    padding:15px;
+    background-color:rgba(140,206,135);
+    text-decoration: none;
+    color:rgba(240,240,240)
+}
+
+
+
+.navlink:hover {
+    background-color:rgba(240,240,240);
+    text-decoration: none;
+    color:rgba(140,206,135);
 }
 
 h1 {
   text-align: center;
+  /* background-color: color:rgba(140,206,135); */
 }
 
 h1:hover {
@@ -17,9 +42,17 @@ h1:hover {
   font-family: "Courier New"
 }
 body {
-    margin:10px;
+    margin:0;
     padding:20px;
 }
+
+.nwf-name {
+    padding:10px;
+}
+.intro-text {
+    padding:10px;
+}
+
 
 .nameinputcont {
     display:flex;
@@ -38,34 +71,40 @@ body {
 .nameinputcont input:hover {
     border:2px solid black;
 }
+
 .btn {
-  background-color:red;
+  background-color:rgba(235,228,70);
   border: red;
 }
 
 .btn:hover {
-    background-color: green;
-    box-shadow: 6px rgba(0,50,0,.8);
+    background-color: rgba(140,206,135);
+    box-shadow: 6px rgba(240,240,240,.8);
 }
 
 .btn:active {
     border:none;
 }
+
 p {
     font-size: 14pt;
     text-align: justify;
     font-family: arial "Garamond";
 }
+/*
 .getitbox p {
     font-family: arial;
     text-transform: uppercase;
 
-}
+} */
 .getitbox {
     border: 2px dotted black;
-    margin: 10px;
-    padding: 10px;
+    margin: 30px;
+    padding: 20px;
+    font-family: arial;
+    text-transform: uppercase;
 }
+
 
 .oldstuffbox p {
     align-text: center;
@@ -101,7 +140,9 @@ p {
     flex-wrap:wrap;
     flex-direction: column;
     padding:15px;
-    text-align:center;
+    height:150px;
+    width:150px;
+    border-radius:50%;
 }
 
 h2 {
@@ -118,7 +159,7 @@ h2 {
 
 }
 
-img:hover {
+.abouthed:hover {
     transform:scale(1.05);
     box-shadow: 4px 4px rgba(133, 149, 159,.2);
 }
@@ -128,7 +169,7 @@ img:hover {
 footer {
     position: relative;
     bottom: 0;
-    height:20px;
+    height:18px;
 }
 
 .foot-container {
@@ -144,7 +185,7 @@ footer {
   width: 15px;
   margin: 5px;
   background: none;
-  border: #888888 dashed;
+  border: 1.5px #888888 dashed;
   transition: all 500ms ease-in-out;
 }
 
